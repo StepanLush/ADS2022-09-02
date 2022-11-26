@@ -3,7 +3,6 @@ package by.it.group151002.chuklin.lesson08;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
-import java.util.Arrays;
 import java.util.Scanner;
 
 /*

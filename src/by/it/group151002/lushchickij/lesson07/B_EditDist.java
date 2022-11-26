@@ -1,4 +1,4 @@
-package by.it.a_khmelev.lesson07;
+package by.it.group151002.lushchickij.lesson07;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -15,7 +15,7 @@ import java.util.Scanner;
 
 Необходимо:
     Решить задачу МЕТОДАМИ ДИНАМИЧЕСКОГО ПРОГРАММИРОВАНИЯ
-    Рекурсивно вычислить расстояние редактирования двух данных непустых строк
+    Итерационно вычислить расстояние редактирования двух данных непустых строк
 
     Sample Input 1:
     ab
@@ -37,11 +37,12 @@ import java.util.Scanner;
 
 */
 
-public class A_EditDist {
+public class B_EditDist {
 
 
     int getDistanceEdinting(String one, String two) {
         //!!!!!!!!!!!!!!!!!!!!!!!!!     НАЧАЛО ЗАДАЧИ     !!!!!!!!!!!!!!!!!!!!!!!!!
+
 
 
         int result = 0;
@@ -50,13 +51,15 @@ public class A_EditDist {
     }
 
 
+
     public static void main(String[] args) throws FileNotFoundException {
         String root = System.getProperty("user.dir") + "/src/";
         InputStream stream = new FileInputStream(root + "by/it/a_khmelev/lesson07/dataABC.txt");
-        A_EditDist instance = new A_EditDist();
+        B_EditDist instance = new B_EditDist();
         Scanner scanner = new Scanner(stream);
         System.out.println(instance.getDistanceEdinting(scanner.nextLine(),scanner.nextLine()));
         System.out.println(instance.getDistanceEdinting(scanner.nextLine(),scanner.nextLine()));
         System.out.println(instance.getDistanceEdinting(scanner.nextLine(),scanner.nextLine()));
     }
+
 }

@@ -1,4 +1,4 @@
-package by.it.a_khmelev.lesson07;
+package by.it.group151002.lushchickij.lesson07;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -15,47 +15,54 @@ import java.util.Scanner;
 
 Необходимо:
     Решить задачу МЕТОДАМИ ДИНАМИЧЕСКОГО ПРОГРАММИРОВАНИЯ
-    Итерационно вычислить расстояние редактирования двух данных непустых строк
+    Итерационно вычислить алгоритм преобразования двух данных непустых строк
+    Вывести через запятую редакционное предписание в формате:
+     операция("+" вставка, "-" удаление, "~" замена, "#" копирование)
+     символ замены или вставки
 
     Sample Input 1:
     ab
     ab
     Sample Output 1:
-    0
+    #,#,
 
     Sample Input 2:
     short
     ports
     Sample Output 2:
-    3
+    -s,~p,#,#,#,+s,
 
     Sample Input 3:
     distance
     editing
-    Sample Output 3:
-    5
+    Sample Output 2:
+    +e,#,#,-s,#,~i,#,-c,~g,
 
+
+    P.S. В литературе обычно действия редакционных предписаний обозначаются так:
+    - D (англ. delete) — удалить,
+    + I (англ. insert) — вставить,
+    ~ R (replace) — заменить,
+    # M (match) — совпадение.
 */
 
-public class B_EditDist {
 
+public class C_EditDist {
 
-    int getDistanceEdinting(String one, String two) {
+    String getDistanceEdinting(String one, String two) {
         //!!!!!!!!!!!!!!!!!!!!!!!!!     НАЧАЛО ЗАДАЧИ     !!!!!!!!!!!!!!!!!!!!!!!!!
 
 
-
-        int result = 0;
+        String result = "";
         //!!!!!!!!!!!!!!!!!!!!!!!!!     КОНЕЦ ЗАДАЧИ     !!!!!!!!!!!!!!!!!!!!!!!!!
         return result;
     }
 
 
-
     public static void main(String[] args) throws FileNotFoundException {
         String root = System.getProperty("user.dir") + "/src/";
         InputStream stream = new FileInputStream(root + "by/it/a_khmelev/lesson07/dataABC.txt");
-        B_EditDist instance = new B_EditDist();
+        C_EditDist instance = new C_EditDist();
         Scanner scanner = new Scanner(stream);
         System.out.println(instance.getDistanceEdinting(scanner.nextLine(),scanner.nextLine()));
         System.out.println(instance.getDistanceEdinting(scanner.nextLine(),scanner.nextLine()));

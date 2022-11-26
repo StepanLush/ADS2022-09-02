@@ -1,7 +1,5 @@
 package by.it.group151003.patiyuk.lesson07;
 
-import org.junit.rules.Stopwatch;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
